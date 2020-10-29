@@ -13,8 +13,8 @@ public class Cliente  extends Thread {
         try {
             while (true) {
                 if (Main.list.isEmpty()){
-                    camarero.prepararComanda();
                     System.out.println("Cliente - Voy a esperar a que me traigan comida...");
+                    camarero.prepararComanda();
                 } else {
                     System.out.println("Cliente - Voy a consumir un " + Main.list.get(0) + " 3 segundos");
                     Main.list.remove(0);
